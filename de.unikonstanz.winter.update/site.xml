@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/de.unikonstanz.winter.feature_1.0.0.201609221612.jar" id="de.unikonstanz.winter.feature" version="1.0.0.201609221612">
+   <feature url="features/de.unikonstanz.winter.feature_1.0.0.qualifier.jar" id="de.unikonstanz.winter.feature" version="1.0.0.qualifier">
       <category name="de.unikonstanz.winter.category"/>
    </feature>
    <category-def name="de.unikonstanz.winter.category" label="Miscellaneous Nodes"/>

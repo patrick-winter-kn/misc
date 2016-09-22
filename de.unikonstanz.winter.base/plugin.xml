@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            icon="icons/snowflake.png"
+            level-id="winter"
+            locked="true"
+            name="Winter"
+            path="/community/">
+      </category>
+   </extension>
+
+</plugin>

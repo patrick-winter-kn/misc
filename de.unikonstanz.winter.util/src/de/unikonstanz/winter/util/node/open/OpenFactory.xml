@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<knimeNode icon="./open.png" type="Other"
+	xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://knime.org/node/v2.8 http://knime.org/node/v2.8.xsd">
+	<name>Open URL/File</name>
+	<shortDescription>Opens a URL/File with the default application or a specified one.</shortDescription>
+	<fullDescription>
+		<intro>Opens a URL/File with the default application or a specified one.
+		</intro>
+		<option name="URL/File">The URL or file to open. The '$' will be replaced by the content of the selected column. The character '$' can be replaced with '\$'</option>
+		<option name="Replacement column">Column containing the replacement value.</option>
+		<option name="Use custom command">The command used to open the URL or file. If this is unchecked the preferred application is used. This is done by using the command <i>start</i> under Windows, <i>open</i> under Mac and <i>xdg-open</i> under Linux.</option>
+		<option name="Limit number of opened windows">Limits the table size, in order to not accidentally open to many windows.</option>
+	</fullDescription>
+	<ports>
+	<inPort name="Input Table" index="0">Table containing the replacement.</inPort>
+	</ports>
+</knimeNode>

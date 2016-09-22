@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE knimeNode PUBLIC "-//UNIKN//DTD KNIME Node 2.0//EN" "http://www.knime.org/Node.dtd">
+<knimeNode icon="./predictionfusion.png" type="Predictor">
+	<name>Prediction Fusion</name>
+
+	<shortDescription>
+		Fuses multiple predictions into one, combined prediction.
+	</shortDescription>
+	<fullDescription>
+		<intro>
+		Fuses multiple predictions into one, combined prediction.
+		<p>
+		Note: Since all predictions have to be reduced to a common denominator, this node can only work with binary classification problems.
+		</p>
+		</intro>
+		<option name="Method">The fusion method. The methods either work on the confidence in the positive class or on the ranking derived from it.
+		<br /><br />
+		Note: Ranking methods will not output a confidence, only another ranking.
+		<ul>
+		<li>Maximum: Maximum of all prediction confidences</li>
+		<li>Mean: Mean of all prediction confidences</li>
+		<li>Median: Median of all prediction confidences</li>
+		<li>Minimum: Minimum of all prediction confidences</li>
+		<li>Rank Maximum: Maximum of all ranks</li>
+		<li>Rank Mean: Mean of all ranks</li>
+		<li>Rank Median: Median of all ranks</li>
+		<li>Rank Minimum: Minimum of all ranks</li>
+		</ul>
+		</option>
+		<option name="Positive class">The positive class.</option>
+		<option name="Prediction">Column containing the predicted class.</option>
+		<option name="Prediction confidence">Column containing the prediction confidence.</option>
+		<option name="Add prediction">Add another prediction to the set of predictions that will be fused into one.</option>
+	</fullDescription>
+
+	<ports>
+		<inPort name="Original predictions" index="0">
+			Table containing the predictions.
+		</inPort>
+		<outPort name="Fused predictions" index="0">
+			Table containing the fused predictions.
+		</outPort>
+	</ports>
+</knimeNode>

@@ -4,20 +4,18 @@
    <extension
          point="org.knime.workbench.repository.categories">
       <category
-            description="Crossref Integration"
-            icon="icons/crossref.png"
-            level-id="crossref"
+            icon="icons/evaluation.png"
+            level-id="evaluation"
             locked="true"
-            name="Crossref"
+            name="Evaluation"
             path="/community/winter/">
       </category>
    </extension>
    <extension
          point="org.knime.workbench.repository.nodes">
       <node
-            category-path="/community/winter/crossref"
-            deprecated="false"
-            factory-class="de.unikonstanz.winter.crossref.node.doi.CrossrefDoiNodeFactory">
+            category-path="/community/winter/evaluation"
+            factory-class="de.unikonstanz.winter.evaluation.predictions.node.enrichmentfactor.EnrichmentFactorNodeFactory">
       </node>
    </extension>
 

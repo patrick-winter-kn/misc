@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.knime.workbench.repository.nodes">
+      <node
+            category-path="/community/winter/predictionfusion"
+            factory-class="de.unikonstanz.winter.predictionfusion.node.predictionfusion.PredictionFusionNodeFactory">
+      </node>
+   </extension>
+   <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Prediction Fusion"
+            icon="icons/predictionfusion.png"
+            level-id="predictionfusion"
+            name="Prediction Fusion"
+            path="/community/winter/">
+      </category>
+   </extension>
+
+</plugin>

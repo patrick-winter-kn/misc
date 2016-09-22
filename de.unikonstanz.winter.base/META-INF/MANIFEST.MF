@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Base Plugin for de.unikonstanz.winter
+Bundle-SymbolicName: de.unikonstanz.winter.base;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.knime.workbench.repository;bundle-version="[3.2.0,4.0.0)"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE knimeNode PUBLIC "-//UNIKN//DTD KNIME Node 2.0//EN" "http://www.knime.org/Node.dtd">
+<knimeNode icon="./crossrefdoi.png" type="Source">
+	<name>Crossref DOI</name>
+
+	<shortDescription>
+	Adds meta information for the given DOIs.
+	</shortDescription>
+
+	<fullDescription>
+		<intro>
+	Adds meta information for the given DOIs.
+		</intro>
+		<option name="DOI column">
+		Column containing the DOI.
+		</option>
+	</fullDescription>
+
+	<ports>
+		<inPort name="Input Table" index="0">
+			Table containing the DOIs.
+		</inPort>
+		<outPort name="Output Table" index="0">
+			Input table with added columns containing information about the publications.
+		</outPort>
+	</ports>
+</knimeNode>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.knime.workbench.repository.nodes">
+      <node
+            category-path="/community/winter"
+            deprecated="false"
+            factory-class="de.unikonstanz.winter.bard.node.experimentgraphparser.BardExperimentGraphParserNodeFactory">
+      </node>
+   </extension>
+
+</plugin>

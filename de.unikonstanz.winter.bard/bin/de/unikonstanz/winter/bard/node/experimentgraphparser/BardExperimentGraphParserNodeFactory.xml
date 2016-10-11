@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE knimeNode PUBLIC "-//UNIKN//DTD KNIME Node 2.0//EN" "http://www.knime.org/Node.dtd">
+<knimeNode icon="./bard.png" type="Source">
+	<name>BARD Experiment Graph Parser</name>
+
+	<shortDescription>
+	Parses BARD Experiment Graph SVGs.
+	</shortDescription>
+
+	<fullDescription>
+		<intro>
+	Parses BARD Experiment Graph SVGs.
+		</intro>
+		<option name="PID column">
+		Column containing the PID.
+		</option>
+		<option name="Experiment graph column">
+		Column containing the experiment graph SVG.
+		</option>
+	</fullDescription>
+
+	<ports>
+		<inPort name="Input Table" index="0">
+			Table containing the PIDs and experiment graph SVGs.
+		</inPort>
+		<outPort name="Output Table" index="0">
+			Table containing the experiments and their successor for every project.
+		</outPort>
+	</ports>
+</knimeNode>
